@@ -1,4 +1,10 @@
 @import-normalize; /* bring in normalize.css styles */
+:root {
+    --color-primary: #af0611;
+    --color-secondary: #030202;
+  
+}
+
 
 body {
   margin: 0;
@@ -7,9 +13,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #8f8d8d;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #af0611;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #030202;
+}
+
+/* button:hover {
+  border-color: #3d0606;
+} */
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-offset: -2px; 
+}
+button:hover {
+  color: #ce1a1a;
+  /* background-color: #110c0c; */
+}
+
+.container{
+  background: #dee4df;
+}
+
